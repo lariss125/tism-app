@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="nl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0c1427">
+  <meta name="description" content="Tism — jouw persoonlijke plek voor energie, prikkels en behoeften.">
+  <title>Tism — jouw ritme, jouw behoeften</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <link rel="manifest" href="manifest.webmanifest">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-title" content="Tism">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <link rel="stylesheet" href="style.css">
+  <script type="module" src="app.js"></script>
+</head>
+<body>
+  <a class="skip" href="#content">Naar de inhoud</a>
+  <div class="shell">
+    <aside class="sidebar">
+      <a class="brand" href="#vandaag" aria-label="Tism, naar Vandaag">
+        <svg class="brand-logo" viewBox="0 0 172 56" aria-hidden="true" focusable="false">
+          <defs><linearGradient id="brand-infinity" x1="0" x2="1" y1="0" y2="0"><stop stop-color="#72a9e8"/><stop offset="1" stop-color="#edac98"/></linearGradient></defs><path d="M28 28C20 17 16 14 11 14C1 14 1 42 11 42C17 42 21 35 28 28C35 21 39 14 45 14C55 14 55 42 45 42C39 42 35 35 28 28Z" fill="none" stroke="url(#brand-infinity)" stroke-width="6.5" stroke-linecap="round" stroke-linejoin="round"/>
+          <text x="62" y="42" fill="currentColor">tis<tspan fill="#edac98">m</tspan></text>
+        </svg>
+      </a>
+      <p class="brand-caption">Jouw ritme. Jouw behoeften.</p>
+      <nav aria-label="Hoofdnavigatie" id="nav"></nav>
+      <div class="sidebar-footer"><span class="privacy-dot"></span> Een plek voor jezelf<p>Je gegevens blijven op dit apparaat.</p></div>
+    </aside>
+    <div class="workspace">
+      <header class="topbar"><span>Een beetje meer inzicht, op jouw tempo.</span><span id="today-label"></span></header>
+      <main id="content" tabindex="-1"></main>
+      <footer class="page-footer">Er is geen goed of fout. Alleen wat werkt voor jou.</footer>
+    </div>
+  </div>
+  <div id="toast" role="status" aria-live="polite"></div>
+</body>
+</html>
